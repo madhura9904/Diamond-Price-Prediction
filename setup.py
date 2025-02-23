@@ -21,3 +21,11 @@ setup(
     install_requires=get_requirements('requirements.txt'),
     packages=find_packages()
 )
+
+from setuptools import find_packages, setup
+
+setup(
+    name="diamond_price_prediction",
+    version="0.1",
+    packages=find_packages()
+)

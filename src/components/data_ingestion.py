@@ -28,7 +28,7 @@ class DataIngestion:
             df=pd.read_csv(os.path.join('notebooks/data','raw.csv'))
             logging.info('Dataset read as pandas Dataframe')
 
-            os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path),exist_ok=True)
+            os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path),exist_ok=True)'''If the "artifacts" folder does not exist, this command creates it before saving the raw data file inside it.'''
 
             df.to_csv(self.ingestion_config.raw_data_path,index=False)
 
